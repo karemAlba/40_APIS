@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Trello</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Trello</h1>
+        </header>
+        <section>
+
+            <!-- elementos arrastrables -->
+            <div id="caja1" draggable="true" ondragstart="dragstart(this, event)"> <span>Caja 1</span></div>
+            <div id="caja2" draggable="true" ondragstart="dragstart(this, event)"> <span>Caja 2</span></div>
+            <!-- contenedor -->
+            <div id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false"> <span>Contenedor</span></div>
+		</section>
+        <script src="js/main.js"></script>
+    </body>
+</html>
